@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "name": "Bluey",
+      "price": 11.00,
+      "imgUrl": "/imgs/bluey.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Bingo",
+      "price": 11.00,
+      "imgUrl": "/imgs/bingo.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Panda",
+      "price": 9.45,
+      "imgUrl": "/imgs/panda.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Nemo",
+      "price": 24.99,
+      "imgUrl": "/imgs/nemo.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Reversible Octopus",
+      "price": 15.00,
+      "imgUrl": "/imgs/octopus.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Kangaroo",
+      "price": 19.95,
+      "imgUrl": "/imgs/kangaroo.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Giraffe",
+      "price": 9.99,
+      "imgUrl": "/imgs/giraffe.jpg"
+    }
+  ]

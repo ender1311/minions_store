@@ -1,0 +1,38 @@
+[
+    {
+      "id": 201,
+      "name": "Cordless Reciprocating Saw",
+      "price": 199.00,
+      "imgUrl": "/imgs/reciprocating.webp"
+    },
+    {
+      "id": 202,
+      "name": "12-in Compound Mitre Saw",
+      "price": 124,
+      "imgUrl": "/imgs/mitre_saw.jpg"
+    },
+    {
+      "id": 203,
+      "name": "20-volt Cordless Drill",
+      "price": 89.90,
+      "imgUrl": "/imgs/drill.webp"
+    },
+    {
+      "id": 204,
+      "name": "Drill Bit Set",
+      "price": 16.98,
+      "imgUrl": "/imgs/drill_bit_set.webp"
+    },
+    {
+      "id": 205,
+      "name": "20-volt battery pack",
+      "price": 55.25,
+      "imgUrl": "/imgs/20v_battery.jpg"
+    },
+    {
+      "id": 206,
+      "name": "Steel Claw Hammer",
+      "price": 49.50,
+      "imgUrl": "/imgs/straight_claw_hammer.jpg"
+    }
+  ]
