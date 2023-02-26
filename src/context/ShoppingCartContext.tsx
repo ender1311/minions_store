@@ -1,6 +1,8 @@
 import { createContext, useContext, ReactNode, useState } from "react"
 import { ShoppingCart } from "../components/ShoppingCart"
 import { useLocalStorage } from "../hooks/useLocalStorage"
+import storeItems from "../data/items.json"
+
 
 type ShoppingCartProviderProps = {
     children: ReactNode
@@ -18,11 +20,14 @@ type ShoppingCartContext = {
     increaseCartQuantity: (id: number) => void
     decreaseCartQuantity: (id: number) => void
     removeFromCart: (id: number) => void
+    removeAll: () => void
     cartQuantity: number
     cartItems: CartItem[]
 }
 
 const ShoppingCartContext = createContext({} as ShoppingCartContext)
+
+const ids = storeItems.map(item => item.id);
 
 export function useShoppingCart() {
     return useContext(ShoppingCartContext)
@@ -87,12 +92,20 @@ export function ShoppingCartProvider({children}: ShoppingCartProviderProps) {
             return currItems.filter(item => item.id !== id)
     })
     }
+
+    function removeAll() {
+        ids.forEach(id => {
+            removeFromCart(id);
+          });
+    }
+
     return (
         <ShoppingCartContext.Provider value={{
             getItemQuantity, 
             increaseCartQuantity, 
             decreaseCartQuantity, 
             removeFromCart,
+            removeAll,
             openCart,
             closeCart,
             cartItems,

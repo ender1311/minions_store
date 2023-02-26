@@ -11,7 +11,9 @@ type ShoppingCartProps = {
 }
 
 function handlePurchase() {
-    window.location.href = "https://buy.stripe.com/test_aEU29W9Ei9Np6T6fYY";
+    //different url's for different payment pages on stripe
+    //window.location.href = "https://buy.stripe.com/test_aEU29W9Ei9Np6T6fYY";
+    window.location.href = "https://buy.stripe.com/test_4gw9Co6s6aRt2CQ002";
 }
 
 function PurchaseButton() {

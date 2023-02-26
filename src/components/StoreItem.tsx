@@ -25,7 +25,8 @@ export function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
         variant="top" 
         src={imgUrl} 
         height="200px"
-        style={{ objectFit: "contain"}} 
+        style={{ objectFit: "contain", padding:"20px"}} 
+        
         />
          <Card.Body className="d-flex flex-column">
         <Card.Title className="d-flex justify-content-between align-items-baseline mb-4">

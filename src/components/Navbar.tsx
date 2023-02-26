@@ -2,17 +2,20 @@ import { Button, Container, Nav, Navbar as NavbarBS } from "react-bootstrap"
 import { NavLink } from "react-router-dom"
 import cart from '../../public/cart.svg'
 import { useShoppingCart } from "../context/ShoppingCartContext"
+import storeItems from "../data/items.json"
 
+const ids = storeItems.map(item => item.id);
+console.log(ids);
 
 export function Navbar() {
   const {openCart, cartQuantity} = useShoppingCart()
-  const {removeFromCart} = useShoppingCart()
+  const {removeAll} = useShoppingCart()
 
   return (
     <NavbarBS sticky="top" className="bg-white shadow-sm mb-3"> 
         <Container>
             <Nav className="me-auto">
-                <Nav.Link to="" as={NavLink}>
+                <Nav.Link to="Home" as={NavLink}>
                     Home 
                 </Nav.Link>
                 <Nav.Link to="toys" as={NavLink}>
@@ -39,11 +42,11 @@ export function Navbar() {
                  }}>
                   
                   <Button 
-                    onClick={(id) => removeFromCart(1)}
+                    onClick={() => removeAll()}
                     variant="danger" 
                     size="sm"
                     >
-                        Remove all 
+                        Remove all Items
                     </Button>
                   </div>
                 <Button

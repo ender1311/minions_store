@@ -1,9 +1,10 @@
 export function About() {
     return (
         <>
-    <h1>About Dan.</h1>
-    <h5> I am looking to transition into the tech industry. I have started with the Codecademy bootcamp and learned the following: Javascript, HTML/Css, SQL, React, and Python. Please contact me for inquires.
-    </h5>
+    <h4>
+        Next feature that is in development: Ability to set your budget. <br></br>
+        Then you can shop with peace of mind knowing that you are still within your budget.
+    </h4>
     </>
     )
 }
