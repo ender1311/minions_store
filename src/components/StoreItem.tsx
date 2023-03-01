@@ -24,7 +24,7 @@ export function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
         <Card.Img 
         variant="top" 
         src={imgUrl} 
-        height="200px"
+        height="150px"
         style={{ objectFit: "contain", padding:"20px"}} 
         
         />

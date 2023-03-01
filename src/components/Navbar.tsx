@@ -1,8 +1,9 @@
 import { Button, Container, Nav, Navbar as NavbarBS } from "react-bootstrap"
 import { NavLink } from "react-router-dom"
-import cart from '../../public/cart.svg'
 import { useShoppingCart } from "../context/ShoppingCartContext"
 import storeItems from "../data/items.json"
+import './css/styles_navbar.css'
+
 
 const ids = storeItems.map(item => item.id);
 console.log(ids);
@@ -14,7 +15,7 @@ export function Navbar() {
   return (
     <NavbarBS sticky="top" className="bg-white shadow-sm mb-3"> 
         <Container>
-            <Nav className="me-auto">
+            <Nav className="me-auto navbar_elements">
                 <Nav.Link to="/minions_store/Home" as={NavLink}>
                     Home 
                 </Nav.Link>
@@ -53,6 +54,7 @@ export function Navbar() {
                     variant="outline-primary"
                     className="rounded-circle"
                     >
+                
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"

@@ -3,7 +3,7 @@ export function Home() {
         <>
     <h1 style={{ textAlign: 'center' }}>Welcome to the Minions Store</h1>
     <img 
-        src="./imgs/logo4.png"
+        src="/imgs/logo4.png"
         style= {{width: '70vw', display: 'block', margin: '0 auto',}}
     >
     </img>

@@ -7,7 +7,7 @@ import { Tools } from './pages/Tools'
 import { About } from './pages/About'
 import { Navbar } from './components/Navbar'
 import {ShoppingCartProvider} from "./context/ShoppingCartContext"
-
+import './styles_app.css'
 
 
 function App() {

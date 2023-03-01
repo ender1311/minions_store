@@ -1,0 +1,18 @@
+.navbar {
+    height:60px;
+    min-height:50px;
+}
+.navbar_elements {
+    font-size: 20px;
+}
+.navbar_elements .nav-link {
+    margin-right:30px;
+    margin-left:-10px;
+}
+
+.navbar_elements .nav-link:hover,
+.navbar_elements .nav-link.active:hover {
+  /* add your styles here */
+  color: #f2d267;
+  transform: scale(1.2);
+}
