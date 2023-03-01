@@ -15,19 +15,19 @@ export function Navbar() {
     <NavbarBS sticky="top" className="bg-white shadow-sm mb-3"> 
         <Container>
             <Nav className="me-auto">
-                <Nav.Link to="Home" as={NavLink}>
+                <Nav.Link to="/minions_store/Home" as={NavLink}>
                     Home 
                 </Nav.Link>
-                <Nav.Link to="toys" as={NavLink}>
+                <Nav.Link to="/minions_store/toys" as={NavLink}>
                     Toys 
                 </Nav.Link>
-                <Nav.Link to="electronics" as={NavLink}>
+                <Nav.Link to="/minions_store/electronics" as={NavLink}>
                     Electronics 
                 </Nav.Link>
-                <Nav.Link to="tools" as={NavLink}>
+                <Nav.Link to="/minions_store/tools" as={NavLink}>
                     Tools 
                 </Nav.Link>
-                <Nav.Link to="about" as={NavLink}>
+                <Nav.Link to="/minions_store/about" as={NavLink}>
                     About 
                 </Nav.Link>
             </Nav>
