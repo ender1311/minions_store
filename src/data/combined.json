@@ -1,8 +1,9 @@
-[
+{
+    
     {
       "id": 1,
-      "name": "Bluey Plush Bundle",
-      "price": 19.99,
+      "name": "Bluey",
+      "price": 11.00,
       "imgUrl": "/imgs/bluey.jpg"
     },
     {
@@ -40,43 +41,45 @@
       "name": "Giraffe",
       "price": 9.99,
       "imgUrl": "/imgs/giraffe.jpg"
+    }
+  ,
+    {
+      "id": 101,
+      "name": "Camera Drone 4K Video",
+      "price": 1199,
+      "imgUrl": "/imgs/drone.jpg"
     },
     {
-        "id": 101,
-        "name": "Camera Drone 4K Video",
-        "price": 1199,
-        "imgUrl": "/imgs/drone.jpg"
+      "id": 102,
+      "name": "Meze Walnut Headphones",
+      "price": 309,
+      "imgUrl": "/imgs/headphones.jpg"
     },
     {
-        "id": 102,
-        "name": "Meze 99 Classics Walnut Gold Headphones",
-        "price": 309.00,
-        "imgUrl": "/imgs/headphones.jpg"
+      "id": 103,
+      "name": "Macbook Pro 13-in",
+      "price": 999,
+      "imgUrl": "/imgs/macbookpro.jpg"
     },
     {
-        "id": 103,
-        "name": "Macbook Pro 13 inch",
-        "price": 999,
-        "imgUrl": "/imgs/macbookpro.jpg"
+      "id": 104,
+      "name": "Canon EOS Rebel T7 DSLR",
+      "price": 429,
+      "imgUrl": "/imgs/canon_camera.jpg"
     },
     {
-        "id": 104,
-        "name": "Canon EOS Rebel T7 DSLR",
-        "price": 429,
-        "imgUrl": "/imgs/canon_camera.jpg"
+      "id": 105,
+      "name": "Amazon Echo Dot Panda",
+      "price": 59.99,
+      "imgUrl": "/imgs/echo_panda.jpg"
     },
     {
-        "id": 105,
-        "name": "Amazon Echo Dot (4th Gen) Panda",
-        "price": 59.99,
-        "imgUrl": "/imgs/echo_panda.jpg"
-    },
-    {
-        "id": 106,
-        "name": "Bose Frames Tenor Smart Glasses",
-        "price": 124.50,
-        "imgUrl": "/imgs/smart_glasses.jpg"
-    },
+      "id": 106,
+      "name": "Bose Smart Glasses",
+      "price": 124.50,
+      "imgUrl": "/imgs/smart_glasses.jpg"
+    }
+  ,
     {
       "id": 201,
       "name": "Cordless Reciprocating Saw",
@@ -104,13 +107,14 @@
     {
       "id": 205,
       "name": "20-volt battery pack",
-      "price": 15.00,
+      "price": 55.25,
       "imgUrl": "/imgs/20v_battery.jpg"
     },
     {
       "id": 206,
       "name": "Steel Claw Hammer",
-      "price": 19.95,
+      "price": 49.50,
       "imgUrl": "/imgs/straight_claw_hammer.jpg"
     }
-  ]
+  
+  }

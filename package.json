@@ -2,7 +2,7 @@
   "name": "ecommerce",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://ender1311.github.io/React_projects/ecommerce",
+  "homepage": "https://ender1311.github.io/minions_store/dist/",
   "type": "module",
   "scripts": {
     "dev": "vite",

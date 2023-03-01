@@ -34,11 +34,9 @@ export function Navbar() {
             {cartQuantity > 0 && (
                  <>
                  <div
-                 style = {{
-                  position: "absolute",
-                    bottom: 18,
-                    right: 120,
-
+                    style = {{
+                    position: "relative",
+                    right: 20,
                  }}>
                   
                   <Button 

@@ -10,6 +10,8 @@ type ShoppingCartProps = {
     isOpen: boolean
 }
 
+
+
 function handlePurchase() {
     //different url's for different payment pages on stripe
     //window.location.href = "https://buy.stripe.com/test_aEU29W9Ei9Np6T6fYY";
@@ -40,9 +42,11 @@ function CartIsEmptyButton() {
     );
   }
 
+
+
 export function ShoppingCart({ isOpen }: ShoppingCartProps) {
     const {closeCart, cartItems} = useShoppingCart()
-
+    const {removeAll} = useShoppingCart();
     
     //get total quantity in cart
     const quantity = cartItems.reduce(
@@ -51,7 +55,17 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
     //console.log(`ID: ${cartItems[0].id}`);
     //console.log(`quantity: ${quantity}`);
 
-    
+    function removeAllButton() {
+        return (
+            <Button 
+            onClick={() => removeAll()}
+            variant="danger" 
+            size="sm"
+            >
+                Remove all Items
+            </Button>
+        )
+    }  
 
     return (
     <Offcanvas show={isOpen} onHide={closeCart} placement="end">
@@ -59,6 +73,7 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
             <Offcanvas.Title>
                 Cart
             </Offcanvas.Title>
+               {removeAllButton()}
         </Offcanvas.Header>
         <Offcanvas.Body>
             <Stack gap={3}>
@@ -76,7 +91,12 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
                 <div>
                     
                 { quantity? 
-                    ( PurchaseButton() ) : 
+                    (
+                        <>
+                        { PurchaseButton() }
+                        { }
+                        </> 
+                    ) : 
                     ( CartIsEmptyButton() ) 
                 }
                 </div>
