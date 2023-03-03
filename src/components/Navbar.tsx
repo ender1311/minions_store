@@ -14,7 +14,7 @@ export function Navbar() {
 
   return (
     <NavbarBS sticky="top" className="bg-white shadow-sm mb-3"> 
-        <Container>
+        <Container className="header_container" style={{width:'100vw'}}>
             <Nav className="me-auto navbar_elements">
                 <Nav.Link to="/minions_store/Home" as={NavLink}>
                     Home 

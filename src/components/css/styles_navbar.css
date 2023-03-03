@@ -16,3 +16,8 @@
   color: #f2d267;
   transform: scale(1.2);
 }
+
+.header_container {
+width:60vw;
+height:100px;
+}

@@ -40,5 +40,23 @@
       "name": "Giraffe",
       "price": 9.99,
       "imgUrl": "/imgs/giraffe.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Bob",
+      "price": 9.99,
+      "imgUrl": "/imgs/minions/Bob.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Giraffe",
+      "price": 9.99,
+      "imgUrl": "/imgs/minions/Kevin.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Giraffe",
+      "price": 9.99,
+      "imgUrl": "/imgs/minions/Stuart.jpg"
     }
   ]
