@@ -83,9 +83,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://ender1311.github.io/minions_store/dist/)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,14 +92,9 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-* [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -118,22 +112,23 @@ This is an example of how to list things you need to use the software and how to
 * npm
   ```sh
   npm install npm@latest -g
+  npm i vite
   ```
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+
+1. Clone the repo
    ```sh
    git clone https://github.com/ender1311/minions_store.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
+3. Start the dev server on your local environment
    ```js
-   const API_KEY = 'ENTER YOUR API';
+   npm run dev
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -145,6 +140,7 @@ This is an example of how to list things you need to use the software and how to
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
+Demo[![Product Name Screen Shot][product-demo]](https://ender1311.github.io/coding_central/imgs/eCommerce_demo5.gif)
 _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -154,10 +150,10 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [ ] Feature 1: Add/Remove to/from Cart Buttons
+- [ ] Feature 2: See what is currently in Cart
+- [ ] Feature 3: Purchase via stripe button
+
 
 See the [open issues](https://github.com/ender1311/minions_store/issues) for a full list of proposed features (and known issues).
 
@@ -228,7 +224,8 @@ Project Link: [https://github.com/ender1311/minions_store](https://github.com/en
 [license-url]: https://github.com/ender1311/minions_store/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/danluk1311
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: https://ender1311.github.io/coding_central/imgs/ecommerce_demo.png
+[product-demo]:https://ender1311.github.io/coding_central/imgs/eCommerce_demo.gif
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
