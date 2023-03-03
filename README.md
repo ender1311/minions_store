@@ -93,6 +93,7 @@
 ### Built With
 
 * [![React][React.js]][React-url]
+* [![React Router][React-router]][React-router-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 
 
@@ -140,7 +141,7 @@ This is an example of how to list things you need to use the software and how to
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-Demo[![Product Name Screen Shot][product-demo]](https://ender1311.github.io/coding_central/imgs/eCommerce_demo5.gif)
+Demo[![Product Name Screen Shot][product-demo]](https://ender1311.github.io/coding_central/imgs/eCommerce_demo2.gif)
 _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -225,11 +226,13 @@ Project Link: [https://github.com/ender1311/minions_store](https://github.com/en
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/danluk1311
 [product-screenshot]: https://ender1311.github.io/coding_central/imgs/ecommerce_demo.png
-[product-demo]:https://ender1311.github.io/coding_central/imgs/eCommerce_demo.gif
+[product-demo]:https://ender1311.github.io/coding_central/imgs/eCommerce_demo2.gif
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
+[React-router]: https://img.shields.io/badge/-React%20Router-CA4245?logo=react-router
+[React-router-url]: https://reactrouter.com/en/main
 [Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
 [Vue-url]: https://vuejs.org/
 [Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
