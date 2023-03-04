@@ -18,11 +18,11 @@ function App() {
   
     <Container className="mb-4">
     <Routes>
-      <Route path="/minions_store/dist/" element={<Home />} />
-      <Route path="/minions_store/dist/toys" element={<Toys />} />
-      <Route path="/minions_store/dist/electronics" element={<Electronics />} />
-      <Route path="/minions_store/dist/tools" element={<Tools />} />
-      <Route path="/minions_store/dist/about" element={<About />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/toys" element={<Toys />} />
+      <Route path="/electronics" element={<Electronics />} />
+      <Route path="/tools" element={<Tools />} />
+      <Route path="/about" element={<About />} />
     </Routes>
   </Container>
   

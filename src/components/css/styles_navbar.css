@@ -13,6 +13,6 @@
 .navbar_elements .nav-link:hover,
 .navbar_elements .nav-link.active:hover {
   /* add your styles here */
-  color: #f2d267;
+  color: #330033;
   transform: scale(1.2);
 }

@@ -14,21 +14,21 @@ export function Navbar() {
 
   return (
     <NavbarBS sticky="top" className="bg-white shadow-sm mb-3"> 
-        <Container className="header_container" style={{width:'80vw'}}>
+        <Container style={{width:'80vw'}}>
             <Nav className="me-auto navbar_elements">
-                <Nav.Link to="/minions_store/dist/" as={NavLink}>
+                <Nav.Link to="/" as={NavLink}>
                     Home 
                 </Nav.Link>
-                <Nav.Link to="/minions_store/dist/toys" as={NavLink}>
+                <Nav.Link to="/toys" as={NavLink}>
                     Toys 
                 </Nav.Link>
-                <Nav.Link to="/minions_store/dist/electronics" as={NavLink}>
+                <Nav.Link to="/electronics" as={NavLink}>
                     Electronics 
                 </Nav.Link>
-                <Nav.Link to="/minions_store/dist/tools" as={NavLink}>
+                <Nav.Link to="/tools" as={NavLink}>
                     Tools 
                 </Nav.Link>
-                <Nav.Link to="/minions_store/dist/about" as={NavLink}>
+                <Nav.Link to="/about" as={NavLink}>
                     About 
                 </Nav.Link>
             </Nav>
