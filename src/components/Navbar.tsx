@@ -16,7 +16,7 @@ export function Navbar() {
     <NavbarBS sticky="top" className="bg-white shadow-sm mb-3"> 
         <Container className="header_container" style={{width:'80vw'}}>
             <Nav className="me-auto navbar_elements">
-                <Nav.Link to="/minions_store/dist/Home" as={NavLink}>
+                <Nav.Link to="/minions_store/dist/" as={NavLink}>
                     Home 
                 </Nav.Link>
                 <Nav.Link to="/minions_store/dist/toys" as={NavLink}>
