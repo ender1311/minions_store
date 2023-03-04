@@ -13,6 +13,7 @@ import './styles_app.css'
 function App() {
   return (
     
+  // Provider component gives entire app access to the Cart
   <ShoppingCartProvider>
   <Navbar />
   

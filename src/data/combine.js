@@ -9,8 +9,8 @@ const combinedData = fileNames.reduce((data, file) => {
     return data + contents.trim().slice(1, -1) + ',';
   }, '');
   
-  const combinedFile = `{
+  const combinedFile = `[
     ${combinedData.slice(0, -1)}
-  }`;
+  ]`;
   
   fs.writeFileSync('./combined.json', combinedFile);

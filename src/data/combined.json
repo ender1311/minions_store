@@ -1,5 +1,4 @@
-{
-    
+[
     {
       "id": 1,
       "name": "Bluey",
@@ -117,4 +116,4 @@
       "imgUrl": "./imgs/straight_claw_hammer.jpg"
     }
   
-  }
+]

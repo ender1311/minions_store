@@ -6,6 +6,12 @@ import storeItems from "../data/items.json"
 import { Button } from "react-bootstrap"
 import { useState } from "react";
 
+
+
+// this component is used to manage current state of shopping cart
+// this convenient react feature allows data to be passed down component tree without having to pass props at each level
+
+
 type ShoppingCartProps = {
     isOpen: boolean
 }

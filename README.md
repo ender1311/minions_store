@@ -82,8 +82,14 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-This is an eCommerce project. It is based on the Minions characters created by Illumination. User can browse different departments of the store through the navbar. User can add items to the cart. User can remove individual items from the cart or remove all items from the cart. Purchase is done via stripe. Responsive elements helps user know quantity of items that have been added.
+This is an eCommerce project. 
+User can browse different departments of the store through the navbar. 
+User can add items to the cart. User can remove individual items from the cart or remove all items from the cart. 
+Responsive elements helps user know quantity of items that have been added.
+Purchase is done via stripe. 
 
+
+Theme: It is based on the Minions characters created by Illumination. 
 [![Product Name Screen Shot][product-screenshot]](https://ender1311.github.io/minions_store/dist/)
 
 
@@ -110,12 +116,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  npm i vite
-  ```
+none
 
 ### Installation
 
@@ -125,8 +126,10 @@ This is an example of how to list things you need to use the software and how to
    git clone https://github.com/ender1311/minions_store.git
    ```
 2. Install NPM packages
+   use react typescript version
    ```sh
-   npm install
+  npm i vite .
+  npm i
    ```
 3. Start the dev server on your local environment
    ```js
@@ -140,10 +143,9 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 Demo[![Product Name Screen Shot][product-demo]](https://ender1311.github.io/coding_central/imgs/eCommerce_demo2.gif)
-_For more examples, please refer to the [Documentation](https://example.com)_
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -152,9 +154,10 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1: Add/Remove to/from Cart Buttons
-- [ ] Feature 2: See what is currently in Cart
+- [ ] Feature 1: Add/Remove Cart Buttons used to modify items in cart
+- [ ] Feature 2: See what is currently in Cart in sidebar
 - [ ] Feature 3: Purchase via stripe button
+- [ ] Feature 4: Easily add items via json file
 
 
 See the [open issues](https://github.com/ender1311/minions_store/issues) for a full list of proposed features (and known issues).

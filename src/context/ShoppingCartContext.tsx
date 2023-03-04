@@ -4,6 +4,11 @@ import { useLocalStorage } from "../hooks/useLocalStorage"
 import storeItems from "../data/items.json"
 
 
+/*
+This is a special prop in React that represents the child elements that are passed to a component. 
+children is of type ReactNode, which means it can accept any valid React node, such as a string, a number, a component, or an array of nodes.
+*/
+
 type ShoppingCartProviderProps = {
     children: ReactNode
 }
