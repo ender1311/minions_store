@@ -3,132 +3,132 @@
       "id": 1,
       "name": "Bluey Plush Bundle",
       "price": 19.99,
-      "imgUrl": "/imgs/bluey.jpg"
+      "imgUrl": "./imgs/bluey.jpg"
     },
     {
       "id": 2,
       "name": "Bingo",
       "price": 11.00,
-      "imgUrl": "/imgs/bingo.jpg"
+      "imgUrl": "./imgs/bingo.jpg"
     },
     {
       "id": 3,
       "name": "Panda",
       "price": 9.45,
-      "imgUrl": "/imgs/panda.jpg"
+      "imgUrl": "./imgs/panda.jpg"
     },
     {
       "id": 4,
       "name": "Nemo",
       "price": 24.99,
-      "imgUrl": "/imgs/nemo.jpg"
+      "imgUrl": "./imgs/nemo.jpg"
     },
     {
       "id": 5,
       "name": "Reversible Octopus",
       "price": 15.00,
-      "imgUrl": "/imgs/octopus.jpg"
+      "imgUrl": "./imgs/octopus.jpg"
     },
     {
       "id": 6,
       "name": "Kangaroo",
       "price": 19.95,
-      "imgUrl": "/imgs/kangaroo.jpg"
+      "imgUrl": "./imgs/kangaroo.jpg"
     },
     {
       "id": 7,
       "name": "Giraffe",
       "price": 9.99,
-      "imgUrl": "/imgs/giraffe.jpg"
+      "imgUrl": "./imgs/giraffe.jpg"
     },
     {
       "id": 8,
       "name": "Bob",
       "price": 9.99,
-      "imgUrl": "/imgs/minions/Bob.jpg"
+      "imgUrl": "./imgs/minions/Bob.jpg"
     },
     {
       "id": 9,
       "name": "Giraffe",
       "price": 9.99,
-      "imgUrl": "/imgs/minions/Kevin.jpg"
+      "imgUrl": "./imgs/minions/Kevin.jpg"
     },
     {
       "id": 10,
       "name": "Giraffe",
       "price": 9.99,
-      "imgUrl": "/imgs/minions/Stuart.jpg"
+      "imgUrl": "./imgs/minions/Stuart.jpg"
     },
     {
         "id": 101,
         "name": "Camera Drone 4K Video",
         "price": 1199,
-        "imgUrl": "/imgs/drone.jpg"
+        "imgUrl": "./imgs/drone.jpg"
     },
     {
         "id": 102,
         "name": "Meze 99 Classics Walnut Gold Headphones",
         "price": 309.00,
-        "imgUrl": "/imgs/headphones.jpg"
+        "imgUrl": "./imgs/headphones.jpg"
     },
     {
         "id": 103,
         "name": "Macbook Pro 13 inch",
         "price": 999,
-        "imgUrl": "/imgs/macbookpro.jpg"
+        "imgUrl": "./imgs/macbookpro.jpg"
     },
     {
         "id": 104,
         "name": "Canon EOS Rebel T7 DSLR",
         "price": 429,
-        "imgUrl": "/imgs/canon_camera.jpg"
+        "imgUrl": "./imgs/canon_camera.jpg"
     },
     {
         "id": 105,
         "name": "Amazon Echo Dot (4th Gen) Panda",
         "price": 59.99,
-        "imgUrl": "/imgs/echo_panda.jpg"
+        "imgUrl": "./imgs/echo_panda.jpg"
     },
     {
         "id": 106,
         "name": "Bose Frames Tenor Smart Glasses",
         "price": 124.50,
-        "imgUrl": "/imgs/smart_glasses.jpg"
+        "imgUrl": "./imgs/smart_glasses.jpg"
     },
     {
       "id": 201,
       "name": "Cordless Reciprocating Saw",
       "price": 199.00,
-      "imgUrl": "/imgs/reciprocating.jpg"
+      "imgUrl": "./imgs/reciprocating.jpg"
     },
     {
       "id": 202,
       "name": "12-in Compound Mitre Saw",
       "price": 124,
-      "imgUrl": "/imgs/mitre_saw.jpg"
+      "imgUrl": "./imgs/mitre_saw.jpg"
     },
     {
       "id": 203,
       "name": "20-volt Cordless Drill",
       "price": 89.90,
-      "imgUrl": "/imgs/drill.webp"
+      "imgUrl": "./imgs/drill.webp"
     },
     {
       "id": 204,
       "name": "Drill Bit Set",
       "price": 16.98,
-      "imgUrl": "/imgs/drill_bit_set.webp"
+      "imgUrl": "./imgs/drill_bit_set.webp"
     },
     {
       "id": 205,
       "name": "20-volt battery pack",
       "price": 15.00,
-      "imgUrl": "/imgs/20v_battery.jpg"
+      "imgUrl": "./imgs/20v_battery.jpg"
     },
     {
       "id": 206,
       "name": "Steel Claw Hammer",
       "price": 19.95,
-      "imgUrl": "/imgs/straight_claw_hammer.jpg"
+      "imgUrl": "./imgs/straight_claw_hammer.jpg"
     }
   ]

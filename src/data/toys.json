@@ -3,60 +3,60 @@
       "id": 1,
       "name": "Bluey",
       "price": 11.00,
-      "imgUrl": "/imgs/bluey.jpg"
+      "imgUrl": "./imgs/bluey.jpg"
     },
     {
       "id": 2,
       "name": "Bingo",
       "price": 11.00,
-      "imgUrl": "/imgs/bingo.jpg"
+      "imgUrl": "./imgs/bingo.jpg"
     },
     {
       "id": 3,
       "name": "Panda",
       "price": 9.45,
-      "imgUrl": "/imgs/panda.jpg"
+      "imgUrl": "./imgs/panda.jpg"
     },
     {
       "id": 4,
       "name": "Nemo",
       "price": 24.99,
-      "imgUrl": "/imgs/nemo.jpg"
+      "imgUrl": "./imgs/nemo.jpg"
     },
     {
       "id": 5,
       "name": "Reversible Octopus",
       "price": 15.00,
-      "imgUrl": "/imgs/octopus.jpg"
+      "imgUrl": "./imgs/octopus.jpg"
     },
     {
       "id": 6,
       "name": "Kangaroo",
       "price": 19.95,
-      "imgUrl": "/imgs/kangaroo.jpg"
+      "imgUrl": "./imgs/kangaroo.jpg"
     },
     {
       "id": 7,
       "name": "Giraffe",
       "price": 9.99,
-      "imgUrl": "/imgs/giraffe.jpg"
+      "imgUrl": "./imgs/giraffe.jpg"
     },
     {
       "id": 8,
       "name": "Bob",
       "price": 9.99,
-      "imgUrl": "/imgs/minions/Bob.jpg"
+      "imgUrl": "./imgs/minions/Bob.jpg"
     },
     {
       "id": 9,
       "name": "Giraffe",
       "price": 9.99,
-      "imgUrl": "/imgs/minions/Kevin.jpg"
+      "imgUrl": "./imgs/minions/Kevin.jpg"
     },
     {
       "id": 10,
       "name": "Giraffe",
       "price": 9.99,
-      "imgUrl": "/imgs/minions/Stuart.jpg"
+      "imgUrl": "./imgs/minions/Stuart.jpg"
     }
   ]
