@@ -82,6 +82,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+This is an eCommerce project. It is based on the Minions characters created by Illumination. User can browse different departments of the store through the navbar. User can add items to the cart. User can remove individual items from the cart or remove all items from the cart. Purchase is done via stripe. Responsive elements helps user know quantity of items that have been added.
 
 [![Product Name Screen Shot][product-screenshot]](https://ender1311.github.io/minions_store/dist/)
 
