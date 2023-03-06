@@ -49,13 +49,13 @@
     },
     {
       "id": 9,
-      "name": "Giraffe",
+      "name": "Kevin",
       "price": 9.99,
       "imgUrl": "./imgs/minions/Kevin.jpg"
     },
     {
       "id": 10,
-      "name": "Giraffe",
+      "name": "Stuart",
       "price": 9.99,
       "imgUrl": "./imgs/minions/Stuart.jpg"
     }

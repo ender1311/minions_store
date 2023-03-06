@@ -13,4 +13,4 @@ const combinedData = fileNames.reduce((data, file) => {
     ${combinedData.slice(0, -1)}
   ]`;
   
-  fs.writeFileSync('./combined.json', combinedFile);
+  fs.writeFileSync('./items.json', combinedFile);

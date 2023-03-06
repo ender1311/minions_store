@@ -16,7 +16,7 @@ export function Navbar() {
     <NavbarBS sticky="top" className="bg-white shadow-sm mb-3"> 
         <Container style={{width:'80vw'}}>
             <Nav className="me-auto navbar_elements">
-                <Nav.Link to="/home" as={NavLink}>
+                <Nav.Link to="/" as={NavLink}>
                     Home 
                 </Nav.Link>
                 <Nav.Link to="/toys" as={NavLink}>
