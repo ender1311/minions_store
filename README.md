@@ -135,7 +135,9 @@ To get a local copy up and running follow these simple example steps.
    ```
 
 4. Start a second server from the /src/stripe_payment/server/server.js file
-
+   ```js
+   npm run devStart
+   ```
 
 ### Info
 Try it out. Add items that you want to your cart.
