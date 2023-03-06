@@ -4,9 +4,6 @@ import { formatCurrency } from "../utilities/formatCurrency"
 import { CartItem } from "./CartItem"
 import storeItems from "../data/items.json"
 import { Button } from "react-bootstrap"
-import { useState } from "react";
-import { MouseEvent } from "react";
-
 
 
 
@@ -25,11 +22,14 @@ export function PurchaseButton() {
         nested function helps to encapsulate logic and separate concerns
         handlePurchase triggers purchase request
         handlePurchaseData makes http request to server
+
+        local server: "http://localhost:3000/checkout-session",
+        AWS server: http://http://3.144.115.253/checkout-session
     */
    
     const handlePurchase = () => {
       const handlePurhcaseData = () => {
-        fetch("http://localhost:3000/checkout-session", {
+        fetch("http://http://3.144.115.253/checkout-session", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -85,9 +85,7 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
     const quantity = cartItems.reduce(
         (quantity, item) => item.quantity + quantity, 0)  
 
-    //console.log(`ID: ${cartItems[0].id}`);
-    //console.log(`quantity: ${quantity}`);
-
+ 
     function removeAllButton() {
         return (
             <Button 

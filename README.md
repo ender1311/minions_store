@@ -153,7 +153,8 @@ https://stripe.com/docs/api/checkout/sessions/create?lang=node
 
 This is a Stripe 'TEST' api which means no actual purchase is being done. 
 
-When testing interactively, use a card number, such as 4242 4242 4242 4242. Enter the card number in the Dashboard or in any payment form.
+When testing interactively, use a card number, such as 4242 4242 4242 4242. 
+Enter the card number in the Dashboard or in any payment form.
 
 Use a valid future date, such as 12/34.
 Use any three-digit CVC (four digits for American Express cards).
