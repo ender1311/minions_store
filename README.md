@@ -34,7 +34,7 @@
     <img src="https://ender1311.github.io/imgs/minions/Bob.jpg" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Minions Store</h3>
+<h3 align="center">Minions eCommerce Store</h3>
 
   <p align="center">
     eCommerce Store
@@ -86,10 +86,11 @@ This is an eCommerce project.
 User can browse different departments of the store through the navbar. 
 User can add items to the cart. User can remove individual items from the cart or remove all items from the cart. 
 Responsive elements helps user know quantity of items that have been added.
-Purchase is done via stripe. 
+Purchase is done via stripe API
+Added client side fetch request to backend server upon initiating purchase
+Added server.js which accepts http post request from the client side.
 
-
-Theme: It is based on the Minions characters created by Illumination. 
+Minions characters created by Illumination. 
 [![Product Name Screen Shot][product-screenshot]](https://ender1311.github.io/minions_store/dist/)
 
 
@@ -114,9 +115,6 @@ Theme: It is based on the Minions characters created by Illumination.
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
-none
 
 ### Installation
 
@@ -136,6 +134,33 @@ none
    npm run dev
    ```
 
+4. Start a second server from the /src/stripe_payment/server/server.js file
+
+
+### Info
+Try it out. Add items that you want to your cart.
+See the items in your shopping cart. 
+
+using stripe API for payment
+go to stripe api documentation here
+https://stripe.com/docs/api/checkout/sessions/object?lang=node
+
+
+parameters are here:
+https://stripe.com/docs/api/checkout/sessions/create?lang=node
+
+This is a Stripe 'TEST' api which means no actual purchase is being done. 
+
+When testing interactively, use a card number, such as 4242 4242 4242 4242. Enter the card number in the Dashboard or in any payment form.
+
+Use a valid future date, such as 12/34.
+Use any three-digit CVC (four digits for American Express cards).
+Use any value you like for other form fields.
+
+documentation here:
+https://stripe.com/docs/testing
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -144,7 +169,9 @@ none
 ## Usage
 
 
-Demo[![Product Name Screen Shot][product-demo]](https://ender1311.github.io/coding_central/imgs/eCommerce_demo2.gif)
+[![add items to cart][product-demo]]
+
+[![stripe payment page][payment-screenshot]]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -230,6 +257,7 @@ Project Link: [https://github.com/ender1311/minions_store](https://github.com/en
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/danluk1311
 [product-screenshot]: https://ender1311.github.io/coding_central/imgs/ecommerce_demo.png
+[payment-screenshot]: https://ender1311.github.io/coding_central/imgs/stripe_payment.png
 [product-demo]:https://ender1311.github.io/coding_central/imgs/eCommerce_demo2.gif
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/

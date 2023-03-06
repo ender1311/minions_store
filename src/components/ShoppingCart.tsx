@@ -21,6 +21,12 @@ type ShoppingCartProps = {
 export function PurchaseButton() {
     const { cartItems } = useShoppingCart();
   
+    /* nested functions here is used to handle purchase request
+        nested function helps to encapsulate logic and separate concerns
+        handlePurchase triggers purchase request
+        handlePurchaseData makes http request to server
+    */
+   
     const handlePurchase = () => {
       const handlePurhcaseData = () => {
         fetch("http://localhost:3000/checkout-session", {
@@ -54,77 +60,7 @@ export function PurchaseButton() {
     );
   }
   
-  //export default PurchaseButton;
-  /*
-
-export function handlePurchase(event: MouseEvent<HTMLButtonElement>){
-    const {closeCart, cartItems} = useShoppingCart();
-
-    const handlePurhcaseData = () => {
-        fetch("http://localhost:3000/checkout-session", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              items: cartItems,
-            }),
-          })
-            .then(res => {
-              if (res.ok) return res.json()
-              return res.json().then(json => Promise.reject(json))
-            })
-            .then(({ url }) => {
-              window.location = url
-            })
-            .catch(e => {
-              console.error(e.error)
-            })
-    }
-
-}
-    /*
-    // Attach event listener to the purchase button
-  const button = document.querySelector("button");
-  button.addEventListener("click", () => {
-    // Call the function defined in script.js and pass the cartItems data as a parameter
-    handlePurchaseData(cartItems);
-
-    });
-    */
-
-    //different url's for different payment pages on stripe
-    //window.location.href = "https://buy.stripe.com/test_aEU29W9Ei9Np6T6fYY";
-    //window.location.href = "https://buy.stripe.com/test_4gw9Co6s6aRt2CQ002";
-
-    // when purhcase button is clicked, run script.js file to send data for purchasing
-   
-    /*const script = document.createElement("script");
-    script.src = "./src/stripe_payment/client/script.js"
-    script.async = true;
-    document.body.appendChild(script);
-
-    script.onload = function () {
-        handlePurchaseData(cartItems);
-      };
-      */
-/*
-}
-
-function PurchaseButton() {
-    
-
-    return (
-        <Button 
-            className="w-100" 
-            onClick={handlePurchase}
-        >
-        Purchase
-        </Button> 
-    );
-}
-
-*/
+  
 function CartIsEmptyButton() {
     return (
         <div style={{ textAlign: 'center' }}>
