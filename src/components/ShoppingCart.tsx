@@ -29,7 +29,7 @@ export function PurchaseButton() {
    
     const handlePurchase = () => {
       const handlePurhcaseData = () => {
-        fetch("http://http://3.144.115.253/checkout-session", {
+        fetch("http://3.144.115.253/checkout-session", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
