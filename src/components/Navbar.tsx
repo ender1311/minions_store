@@ -5,8 +5,6 @@ import storeItems from "../data/items.json"
 import './css/styles_navbar.css'
 
 
-const ids = storeItems.map(item => item.id);
-console.log(ids);
 
 export function Navbar() {
   const {openCart, cartQuantity} = useShoppingCart()

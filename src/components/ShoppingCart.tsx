@@ -24,12 +24,12 @@ export function PurchaseButton() {
         handlePurchaseData makes http request to server
 
         local server: "http://localhost:3000/checkout-session",
-        AWS server: http://http://3.144.115.253/checkout-session
+        AWS server: http://3.144.115.253/checkout-session
     */
    
     const handlePurchase = () => {
       const handlePurhcaseData = () => {
-        fetch("http://localhost:3000/checkout-session", {
+        fetch("http://3.144.115.253/checkout-session", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

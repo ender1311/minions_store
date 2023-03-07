@@ -6,6 +6,16 @@ const express = require("express")
 const app = express()
 const cors = require("cors")
 app.use(express.json())
+
+app.options('/checkout-session', function(req, res) {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'GET, POST');
+  res.header('Access-Control-Allow-Headers', 'Content-Type');
+  res.sendStatus(200);
+});
+
+// this next block of code only allows the app on my site to have access to the backend purchasing system
+
 app.use(
   cors({
     origin: 
