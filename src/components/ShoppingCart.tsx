@@ -15,50 +15,6 @@ type ShoppingCartProps = {
     isOpen: boolean
 }
 
-export function PurchaseButton() {
-    const { cartItems } = useShoppingCart();
-  
-    /* nested functions here is used to handle purchase request
-        nested function helps to encapsulate logic and separate concerns
-        handlePurchase triggers purchase request
-        handlePurchaseData makes http request to server
-
-        local server: "http://localhost:3000/checkout-session",
-        AWS server: http://3.144.115.253/checkout-session
-    */
-   
-    const handlePurchase = () => {
-      const handlePurhcaseData = () => {
-        fetch("http://3.144.115.253/checkout-session", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            items: cartItems,
-          }),
-        })
-          .then((res) => {
-            if (res.ok) return res.json();
-            return res.json().then((json) => Promise.reject(json));
-          })
-          .then(({ url }) => {
-            window.location = url;
-          })
-          .catch((e) => {
-            console.error(e.error);
-          });
-      };
-  
-      handlePurhcaseData();
-    };
-  
-    return (
-      <Button className="w-100" onClick={handlePurchase}>
-        Purchase
-      </Button>
-    );
-  }
   
   
 function CartIsEmptyButton() {
@@ -137,4 +93,50 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
         </Offcanvas.Body>
     </Offcanvas>
     )
+}
+
+
+export function PurchaseButton() {
+  const { cartItems } = useShoppingCart();
+
+  /* nested functions here is used to handle purchase request
+      nested function helps to encapsulate logic and separate concerns
+      handlePurchase triggers purchase request
+      handlePurchaseData makes http request to server
+
+      local server: "http://localhost:3000/checkout-session",
+      AWS server: http://3.144.115.253/checkout-session
+  */
+ 
+  const handlePurchase = () => {
+    const handlePurhcaseData = () => {
+      fetch("http://3.144.115.253/checkout-session", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          items: cartItems,
+        }),
+      })
+        .then((res) => {
+          if (res.ok) return res.json();
+          return res.json().then((json) => Promise.reject(json));
+        })
+        .then(({ url }) => {
+          window.location = url;
+        })
+        .catch((e) => {
+          console.error(e.error);
+        });
+    };
+
+    handlePurhcaseData();
+  };
+
+  return (
+    <Button className="w-100" onClick={handlePurchase}>
+      Purchase
+    </Button>
+  );
 }
