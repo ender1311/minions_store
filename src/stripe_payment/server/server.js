@@ -20,8 +20,8 @@ app.use(
   cors({
     origin: 
         [
-          "http://localhost:5500",
           "http://localhost:5173",
+          "http://localhost:5500",
           "http://ender1311.github.io",
           "https://ender1311.github.io",
 

@@ -5,6 +5,25 @@ import { CartItem } from "./CartItem"
 import storeItems from "../data/items.json"
 import { Button } from "react-bootstrap"
 
+// require('dotenv').config({ path: './.env' })
+// const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY)
+
+//  import  dotenv from "dotenv"
+// import fetch from "node-fetch"
+//  dotenv.config();
+
+// import dotenv from 'dotenv';
+// // import * as Stripe from 'stripe';
+
+
+// dotenv.config({ path: './.env' });
+
+// const Stripe = require('stripe');
+// //const stripe = Stripe('sk_test_...');
+
+//  const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
+//    apiVersion: '2020-08-27',
+//  });
 
 
 // this component is used to manage current state of shopping cart
@@ -106,11 +125,13 @@ export function PurchaseButton() {
 
       local server: "http://localhost:3000/checkout-session",
       AWS server: http://3.144.115.253/checkout-session
+      elastic IP address - IPv4 address: 3.19.9.90
+      https://ec2-3-19-9-90.us-east-2.compute.amazonaws.com/checkout-session
   */
  
   const handlePurchase = () => {
     const handlePurhcaseData = () => {
-      fetch("http://3.144.115.253/checkout-session", {
+      fetch("http://18.217.225.84:8080/checkout-session", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
