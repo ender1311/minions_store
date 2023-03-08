@@ -12,6 +12,9 @@ export function CartItem({id, quantity}: CartItemProps) {
     const item = storeItems.find(i => i.id === id)
     if (item == null) return null
     return (
+
+        // render items in shopping cart
+        // each item rendered will include image, name, price, quantity, and total price of all quantities of this type of item.
         <Stack direction="horizontal" gap={2} className="d-flex align-items-center">
             <img src={item.imgUrl} style={{width: "125px", height:"75px", objectFit:"contain"}} alt="cart item"
             />
@@ -28,6 +31,7 @@ export function CartItem({id, quantity}: CartItemProps) {
             </div>
             </div>
             <div> {formatCurrency(item.price * quantity)} </div>
+            {/* add remove button which will call remove function */}
             <Button 
                 variant="outline-danger" 
                 size="sm" 

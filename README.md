@@ -124,10 +124,10 @@ To get a local copy up and running follow these simple example steps.
    git clone https://github.com/ender1311/minions_store.git
    ```
 2. Install NPM packages
-   use react typescript version
+   use react typescript
    ```sh
-  npm i vite .
-  npm i
+   npm i vite .
+   npm i
    ```
 3. Start the dev server on your local environment
    ```js
@@ -226,9 +226,11 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - danluk1311@gmail.com
+Dan Luk - danluk1311@gmail.com
 
 Project Link: [https://github.com/ender1311/minions_store](https://github.com/ender1311/minions_store)
+
+Backend server code: https://github.com/ender1311/aws_stripe_payment/blob/master/server.js
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

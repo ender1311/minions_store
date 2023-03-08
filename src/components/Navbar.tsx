@@ -47,6 +47,7 @@ export function Navbar() {
                     </Button>
                   </div>
                 <Button
+                // opens the shopping cart when clicked
                     onClick = {openCart}
                     style={{ width: "3rem", height: "3rem", position: "relative" }}
                     variant="outline-primary"

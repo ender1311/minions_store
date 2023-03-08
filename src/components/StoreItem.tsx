@@ -12,13 +12,15 @@ type StoreItemProps = {
 }
 
 export function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
-    const {
+  // enable useShoppingCart to use functions we have implemented in ShoppingCartContext
+  const {
         getItemQuantity, 
         increaseCartQuantity, 
         decreaseCartQuantity, 
         removeFromCart
     } = useShoppingCart()
-    
+
+    // quantity is now dynamically set
     const quantity = getItemQuantity(id);
 
     return ( 
@@ -45,7 +47,7 @@ export function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
         </Card.Title>
         {/* mt-auto will cause the add to cart buttons to fill the rest of the space */}
         <div className="mt-auto">
-          {/* if quantity is zero, then thill render Add to cart button */}
+          {/* if quantity is zero, then this will render Add to cart button */}
             {quantity === 0 ? (
                 <Button className="w-100" onClick={() => increaseCartQuantity(id)}>
                     + Add To Cart

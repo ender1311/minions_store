@@ -13,11 +13,13 @@ type ShoppingCartProviderProps = {
     children: ReactNode
 }
 
+// only need id and quantity to figure out totals.
 type CartItem = {
     id: number
     quantity: number
 }
 
+// these functions enable the app to do basic operations on the shopping cart
 type ShoppingCartContext = {
     openCart: () => void
     closeCart: () => void
@@ -42,6 +44,8 @@ export function useShoppingCart() {
 export function ShoppingCartProvider({children}: ShoppingCartProviderProps) {
     const[isOpen, setIsOpen] = useState(false)
 
+    // useLocalStorage allows app to save changes made to the shopping cart in previous sessions
+
     const [cartItems, setCartItems] = useLocalStorage<CartItem[]>(
         "shopping-cart",
         []
@@ -50,21 +54,30 @@ export function ShoppingCartProvider({children}: ShoppingCartProviderProps) {
     const cartQuantity = cartItems.reduce(
         (quantity, item) => item.quantity + quantity, 0
         )
+        
+    // enables user to open cart or close cart
 
     const openCart = () => setIsOpen(true)
     const closeCart = () => setIsOpen(false)
 
+    // find item with current id, if we have that value, return the quantity of it
     function getItemQuantity(id: number) {
         return cartItems.find(item => item.id === id)?.quantity || 0
     }
 
+    
     function increaseCartQuantity(id: number) {
         setCartItems(currItems => {
+            //if this item doesn't already exist in the cart, then it needs to be added to cart
+
             if (currItems.find(item=> item.id === id) == null) {
+
+                //add item to cart following previous items in cart
                 return [...currItems, {id, quantity:1}]
             } else {
                 return currItems.map(item => {
                     if (item.id === id) {
+                        // otherwise, increase the item quantity by 1
                         return {...item, quantity: item.quantity + 1}
                     }
                     else {
@@ -78,10 +91,12 @@ export function ShoppingCartProvider({children}: ShoppingCartProviderProps) {
     function decreaseCartQuantity(id: number) {
         setCartItems(currItems => {
             if (currItems.find(item=> item.id === id)?.quantity === 1) {
+                // if the quantity is 1, then when user dereases it, the item will be removed from currItems
                 return currItems.filter(item => item.id !== id)
             } else {
                 return currItems.map(item => {
                     if (item.id === id) {
+                        // otherwise, just decrease the quantity by 1
                         return {...item, quantity: item.quantity - 1}
                     }
                     else {
@@ -94,6 +109,7 @@ export function ShoppingCartProvider({children}: ShoppingCartProviderProps) {
 
     function removeFromCart(id: number) {
         setCartItems(currItems => {
+            // this removes the item from cart completely independent of quantity number
             return currItems.filter(item => item.id !== id)
     })
     }

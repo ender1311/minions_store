@@ -74,6 +74,8 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
     }  
 
     return (
+      // Offcanvas is slide in effect from bootstrap
+      // isOpen is passed in. it is either true or false. This tells Offcanvas whether to show shopping cart or not
     <Offcanvas show={isOpen} onHide={closeCart} placement="end">
         <Offcanvas.Header closeButton>
             <Offcanvas.Title>
@@ -82,11 +84,19 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
                {removeAllButton()}
         </Offcanvas.Header>
         <Offcanvas.Body>
+          {/* 
+            stack aligns items in a grid
+            gap from bootstrap gives margin in between items  
+            */}
             <Stack gap={3}>
                 {cartItems.map(item => (
                     <CartItem key={item.id} {...item} />
                 ))}
                 <div className="ms-auto fw-bold fs-5">
+                  {/* implement function that finds all id's of items that are in cart and 
+                    multiplies that amount by their quantities
+                  
+                   */}
                     Total {formatCurrency(cartItems.reduce((total, cartItem) => {
             const item = storeItems.find(i => i.id === cartItem.id)
             return total + (item?.price || 0) * cartItem.quantity
@@ -123,10 +133,6 @@ export function PurchaseButton() {
       handlePurchase triggers purchase request
       handlePurchaseData makes http request to server
 
-      local server: "http://localhost:3000/checkout-session",
-      AWS server: http://3.144.115.253/checkout-session
-      elastic IP address - IPv4 address: 3.19.9.90
-      https://ec2-3-19-9-90.us-east-2.compute.amazonaws.com/checkout-session
   */
  
   const handlePurchase = () => {
