@@ -131,7 +131,7 @@ export function PurchaseButton() {
  
   const handlePurchase = () => {
     const handlePurhcaseData = () => {
-      fetch("http://3.133.140.120:3000/checkout-session", {
+      fetch("https://193.42.0.158:3000/checkout-session", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
