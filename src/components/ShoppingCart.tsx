@@ -131,7 +131,7 @@ export function PurchaseButton() {
  
   const handlePurchase = () => {
     const handlePurhcaseData = () => {
-      fetch("https://18.217.225.84:8080/checkout-session", {
+      fetch("http://18.217.225.84:8080/checkout-session", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
