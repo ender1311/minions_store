@@ -16,3 +16,25 @@
   color: #330033;
   transform: scale(1.2);
 }
+
+@media screen and (max-width: 500px) {
+
+    .navbar {
+        height:60px;
+        min-height:50px;
+    }
+    .navbar_elements {
+        font-size: 14px;
+    }
+    .navbar_elements .nav-link {
+        margin-right: 5px;
+        
+    }
+    
+    .navbar_elements .nav-link:hover,
+    .navbar_elements .nav-link.active:hover {
+      /* add your styles here */
+      color: #330033;
+      transform: scale(1.2);
+    }
+}
