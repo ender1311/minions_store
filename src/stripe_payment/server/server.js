@@ -29,8 +29,7 @@ app.use(
   })
 )
 
-// running server from index.html is on port: 5500
-// running server from npm run devStart for react vite is on 5173
+// Stripe package included in node library needs to be configured with account's secret key
 const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY)
 
 
@@ -63,7 +62,12 @@ https://stripe.com/docs/api/checkout/sessions/object?lang=node
 parameters are here:
 https://stripe.com/docs/api/checkout/sessions/create?lang=node
 
+stripe node library documentation is here:
+https://www.npmjs.com/package/stripe
+
+
 */
+
 
 app.post("/checkout-session", async (req, res) => {
   try {
