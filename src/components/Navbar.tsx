@@ -12,7 +12,7 @@ export function Navbar() {
 
   return (
     <NavbarBS sticky="top" className="bg-white shadow-sm mb-3"> 
-        <Container style={{width:'80vw'}}>
+        <Container style={{width:'100%'}}>
             <Nav className="me-auto navbar_elements">
                 <Nav.Link to="/" as={NavLink}>
                     Home 
