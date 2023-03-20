@@ -7,7 +7,7 @@
 }
 .navbar_elements .nav-link {
     margin-right:30px;
-    margin-left:-10px;
+    margin-left:-20px;
 }
 
 .navbar_elements .nav-link:hover,
@@ -22,6 +22,7 @@
     .navbar {
         height:60px;
         min-height:50px;
+        margin-left: -10px;
     }
     .navbar_elements {
         font-size: 14px;
@@ -35,6 +36,6 @@
     .navbar_elements .nav-link.active:hover {
       /* add your styles here */
       color: #330033;
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
 }
