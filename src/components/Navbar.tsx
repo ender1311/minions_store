@@ -11,8 +11,8 @@ export function Navbar() {
   const {removeAll} = useShoppingCart()
 
   return (
-    <NavbarBS sticky="top" className="bg-white shadow-sm mb-3"> 
-        <Container style={{width:'100%'}}>
+    <NavbarBS sticky="top" className="bg-white shadow-sm mb-3 navbarbs"> 
+        <Container style={{width:'100%'}} className="container_elements">
             <Nav className="me-auto navbar_elements">
                 <Nav.Link to="/" as={NavLink}>
                     Home 

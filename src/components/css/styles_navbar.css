@@ -17,21 +17,21 @@
   transform: scale(1.2);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 500px) {
 
 
     .navbar {
-        height:60px;
-        min-height:50px;
+        height:70px;
+        width: 100%;
         margin-right: 10px;
         margin-left: -20px;
     }
     .navbar_elements {
-        font-size: 14px;
+        font-size: 10px;
     }
     .navbar_elements .nav-link {
         margin-right: 0px;
-        margin-left:-10px;
+        margin-left: 0px;
     }
     
     .navbar_elements .nav-link:hover,
