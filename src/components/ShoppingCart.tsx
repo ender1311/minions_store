@@ -133,7 +133,8 @@ export function PurchaseButton() {
       handlePurchase triggers purchase request
       handlePurchaseData makes http request to server
     working: http://3.133.140.120:3000/checkout-session
-  */
+  https://minionstore.dan-luk.com:8080/payment/checkout-session
+    */
  
   const handlePurchase = () => {
     const handlePurhcaseData = () => {
