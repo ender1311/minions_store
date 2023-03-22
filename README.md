@@ -31,7 +31,7 @@
 <br />
 <div align="center">
   <a href="https://ender1311.github.io/minions_store/dist/">
-    <img src="https://ender1311.github.io/imgs/minions/Bob.jpg" alt="Logo" width="80" height="80">
+    <img src="https://github.com/ender1311/minions_store/blob/main/imgs/minions/Bob.jpg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Minions eCommerce Store</h3>
@@ -134,9 +134,10 @@ To get a local copy up and running follow these simple example steps.
    npm run dev
    ```
 
-4. Start a second server from the /src/stripe_payment/server/server.js file
+4. Start a second server from the directory: /src/stripe_payment/server/
+   start server
    ```js
-   npm run devStart
+   node server.js
    ```
 
 ### Info
