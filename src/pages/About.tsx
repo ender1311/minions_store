@@ -2,22 +2,23 @@ export function About() {
     return (
         <>
     <h4>
-    This is a Stripe 'TEST' api which means no actual purchase is being done. 
+    Implemented Stripe 'TEST' api meaning no actual purchase is being done. <br></br>
 
-        When testing interactively, use a card number, such as 4242 4242 4242 4242. 
+    To test, click 'purchase' and use a dummy credit card number: 4242 4242 4242 4242. <br></br>
+    The other values do not matter.
         </h4>
-        
-        <h3>
+        <br></br>
+        <h5>
         Next feature that is in development: Ability to set your budget. <br></br>
         Then you can shop with peace of mind knowing that you are still within your budget.
         <br></br>
         <br></br>
-        If you're interested in electric bikes, check out this store:</h3> 
+        To see other projects, click&nbsp;
         <a 
-            href="https://ender1311.github.io/ebike_store/store.html">
-            eBike accessories shop
+            href="https://dan-luk.com/projects.html">
+            here
         </a>
-
+        </h5> 
         
     </>
     )

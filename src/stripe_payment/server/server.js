@@ -65,7 +65,6 @@ https://stripe.com/docs/api/checkout/sessions/create?lang=node
 stripe node library documentation is here:
 https://www.npmjs.com/package/stripe
 
-
 */
 
 

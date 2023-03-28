@@ -1,0 +1,14 @@
+[
+    {
+      "id": 301,
+      "name": "Ramen (20 pack)",
+      "price": 35.00,
+      "imgUrl": "./imgs/ramen.jpg"
+    },
+    {
+        "id": 302,
+        "name": "Cherry Coke (12 pack)",
+        "price": 7.50,
+        "imgUrl": "./imgs/cherry_coke.png"
+    }
+  ]

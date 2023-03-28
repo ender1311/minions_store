@@ -26,6 +26,9 @@ export function Navbar() {
                 <Nav.Link to="/tools" as={NavLink}>
                     Tools 
                 </Nav.Link>
+                <Nav.Link to="/pantry" as={NavLink}>
+                    Pantry 
+                </Nav.Link>
                 <Nav.Link to="/about" as={NavLink}>
                     About 
                 </Nav.Link>
@@ -42,6 +45,7 @@ export function Navbar() {
                     onClick={() => removeAll()}
                     variant="danger" 
                     size="sm"
+                    className="remove-all-button"
                     >
                         Remove all Items
                     </Button>

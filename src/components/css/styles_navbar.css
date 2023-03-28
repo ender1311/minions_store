@@ -17,7 +17,7 @@
   transform: scale(1.2);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
 
 
     .navbar {
@@ -39,5 +39,8 @@
       /* add your styles here */
       color: #330033;
       transform: scale(1.1);
+    }
+    .remove-all-button {
+        display: none;
     }
 }
