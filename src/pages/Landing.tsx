@@ -41,15 +41,15 @@ export function Landing() {
     },
     {
       id: 2,
-      imageUrl: '/imgs/roomba1.png',
+      imageUrl: 'https://raw.githubusercontent.com/ender1311/minions_store/main/dist/imgs/roomba1.png',
     },
     {
       id: 3,
-      imageUrl: '/imgs/bluey_bundle_md.jpg',
+      imageUrl: 'https://raw.githubusercontent.com/ender1311/minions_store/main/dist/imgs/bluey_bundle_md.jpg',
     },
     {
         id: 4,
-        imageUrl: '/imgs/mitre_saw_md.jpg',
+        imageUrl: 'https://raw.githubusercontent.com/ender1311/minions_store/main/dist/imgs/mitre_saw_md.jpg',
       }
   ];
   
