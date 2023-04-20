@@ -9,6 +9,7 @@ import { About } from './pages/About'
 import { Navbar } from './components/Navbar'
 import {ShoppingCartProvider} from "./context/ShoppingCartContext"
 import './styles_app.css'
+import {Landing} from "./pages/Landing"
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
   
     <Container className="mb-4">
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Landing />} />
       <Route path="/toys" element={<Toys />} />
       <Route path="/electronics" element={<Electronics />} />
       <Route path="/tools" element={<Tools />} />

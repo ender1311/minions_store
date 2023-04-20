@@ -36,9 +36,11 @@ export function Navbar() {
             {cartQuantity > 0 && (
                  <>
                  <div
+                    id = "remove_all_button"
                     style = {{
                     position: "relative",
                     right: 20,
+                    
                  }}>
                   
                   <Button 

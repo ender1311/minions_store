@@ -1,7 +1,18 @@
 import {Col,Row} from "react-bootstrap"
 import storeItems from "../data/toys.json"
-import { StoreItem } from "../components/StoreItem"
+import { StoreItem} from "../components/StoreItem"
 
+
+function shuffleArray<T>(array: T[]): T[] {
+    const shuffledArray = [...array];
+    for (let i = shuffledArray.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+    }
+    return shuffledArray;
+  }
+  
+  
 {/*
     Create grid system using bootstrap that is clean
     g-3 gives a small gap between my shop items
@@ -10,16 +21,22 @@ import { StoreItem } from "../components/StoreItem"
     ...item allows me to pass all four properties (id, name, price, image url) dynamically without having to specify each one
      */}
      
-export function Toys() {
-    return <><h1>Toys</h1>
-    <Row md={2} xs={1} lg={3} xl={4} className="g-3">
-        {storeItems.map(item => (
-            <Col key={item.id}>
-                <StoreItem {...item} />
-            </Col>
-        ))}
-        
-    </Row>
-    
-    </>
-}
+
+      
+      export function Toys() {
+        const shuffledItems = shuffleArray(storeItems);
+      
+        return (
+          <>
+            <h1>Toys</h1>
+            <Row md={2} xs={1} lg={3} xl={4} className="g-3">
+              {shuffledItems.map((item) => (
+                <Col key={item.id}>
+                  <StoreItem {...item} />
+                </Col>
+              ))}
+            </Row>
+          </>
+        );
+      }
+      
