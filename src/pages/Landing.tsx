@@ -33,11 +33,11 @@ export function Landing() {
   const products: Product[] = [
     {
       id: 0,
-      imageUrl: 'https://target.scene7.com/is/image/Target/GUEST_7d1e58c6-6f58-4883-b26c-95d92339f1ae?wid=2160&qlt=80&fmt=webp',
+      imageUrl: 'https://www.everysingletopic.com/wp-content/uploads/2019/11/soft-toys.jpg',
     },
     {
       id: 1,
-      imageUrl: 'https://target.scene7.com/is/image/Target/GUEST_04b89a1b-a209-43e8-a2f9-3f06b034441f?wid=2160&qlt=80&fmt=webp',
+      imageUrl: 'https://www.tubefilter.com/wp-content/uploads/2023/02/cocomelon-squishmallows-1920x1131.jpg',
     },
     {
       id: 2,
@@ -45,11 +45,11 @@ export function Landing() {
     },
     {
       id: 3,
-      imageUrl: 'https://raw.githubusercontent.com/ender1311/minions_store/main/dist/imgs/bluey_bundle_md.jpg',
+      imageUrl: 'https://www.everysingletopic.com/wp-content/uploads/2019/11/soft-toys1.jpg',
     },
     {
         id: 4,
-        imageUrl: 'https://raw.githubusercontent.com/ender1311/minions_store/main/dist/imgs/mitre_saw_md.jpg',
+        imageUrl: 'https://helios-i.mashable.com/imagery/articles/048JGGHiHKOLCnMhc1Gitp3/hero-image.fill.size_1200x675.v1623366597.jpg',
       }
   ];
   
