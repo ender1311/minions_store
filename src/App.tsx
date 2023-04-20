@@ -10,7 +10,7 @@ import { Navbar } from './components/Navbar'
 import {ShoppingCartProvider} from "./context/ShoppingCartContext"
 import './styles_app.css'
 import {Landing} from "./pages/Landing"
-
+import {Budget} from "./components/Budget"
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
   <Navbar />
   
     <Container className="mb-4">
+    <Budget totalBudget={500} /> {/* add the Budget component */}
     <Routes>
       <Route path="/" element={<Landing />} />
       <Route path="/toys" element={<Toys />} />
