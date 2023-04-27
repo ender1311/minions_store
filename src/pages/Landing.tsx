@@ -33,7 +33,7 @@ export function Landing() {
   const products: Product[] = [
     {
       id: 0,
-      imageUrl: 'https://raw.githubusercontent.com/ender1311/minions_store/main/imgs/soft-toys.jpg',
+      imageUrl: 'https://raw.githubusercontent.com/ender1311/minions_store/main/public/imgs/soft-toys.jpg',
     },
     {
       id: 1,
