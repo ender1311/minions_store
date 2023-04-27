@@ -70,7 +70,7 @@ const budgetLimitPosition = `${147 - (percentageBudgetLimit * growthFactor)}%`;
         <Form.Check
           type="switch"
           id="toggle-budget"
-          label="Use Budget:"
+          label="Budget Feature"
           checked={toggleBudget}
           onChange={handleToggleChange}
         />

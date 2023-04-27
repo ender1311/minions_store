@@ -33,7 +33,7 @@ export function Landing() {
   const products: Product[] = [
     {
       id: 0,
-      imageUrl: 'https://www.everysingletopic.com/wp-content/uploads/2019/11/soft-toys.jpg',
+      imageUrl: 'https://raw.githubusercontent.com/ender1311/minions_store/main/imgs/soft-toys.jpg',
     },
     {
       id: 1,
