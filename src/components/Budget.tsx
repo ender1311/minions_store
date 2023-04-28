@@ -46,7 +46,7 @@ useEffect(() => {
   const percentageUsed = Math.round((usedBudget / userBudget) * 100);
 
   // Reduce the growth by 25%
-  const growthFactor = 0.75;
+  const growthFactor = 0.71;
 
   // calculates the height of the budget bar based on the percentage of the budget used
   const barHeight = `${percentageUsed * growthFactor}%`;
@@ -61,7 +61,7 @@ useEffect(() => {
   const percentageBudgetLimit = Math.round((userBudget / userBudget) * 100);
 
 // Position the budget limit line
-const budgetLimitPosition = `${147 - (percentageBudgetLimit * growthFactor)}%`;
+const budgetLimitPosition = `${170 - percentageBudgetLimit}%`;
 
 
  return (

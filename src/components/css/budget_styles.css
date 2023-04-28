@@ -25,7 +25,8 @@
   
   .budget-bar {
     position: relative;
-    top:15px;
+    
+    transform: translateY(30px);
     width: 70%;
     border: 1px solid black;
     border-radius: 5px;
@@ -36,7 +37,7 @@
   
   .budget-info {
     display: flex;
-    flex-direction: column-reverse; /* Add this */
+    flex-direction: column-reverse; 
     justify-content: space-between;
     align-items: center;
   }
@@ -70,9 +71,11 @@
   
   .budget-limit-line {
     position: absolute;
+    transform: translateY(30px);
     left: 0;
     right: 0;
     border-bottom: 1px dashed black;
+    z-index: 1;
   }
   
   .budget-limit-label {
